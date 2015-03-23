@@ -9,7 +9,7 @@ class Course {
 
 	String toString() {title}
 
-    static constraints = {
+	static constraints = {
 		title()
 		code()
 		tutor()

@@ -6,7 +6,7 @@ class Library {
 	String openingHours
 	String librarian
 
-	static hasMany=[students: Student, books: Book]
+	static hasMany=[students: Student, books: Book, librarians: Librarian]
 
 	String toString() {name}
 
