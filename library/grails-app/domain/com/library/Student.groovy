@@ -4,9 +4,13 @@ class Student {
 	String name
 	String email
 	String studentId
-	String course
+	Course course
 
-    static constraints = {
+	static hasMany=[books: Book]
+
+	String toString() {name}
+
+	static constraints = {
 		name()
 		email()
 		studentId()

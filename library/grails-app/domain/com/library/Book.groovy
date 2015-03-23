@@ -6,14 +6,14 @@ class Book {
 	String isbn
 	String dateBorrowed
 	String returnDate
-	String student
 
-    static constraints = {
+	String toString() {title}	
+
+	static constraints = {
 		title()
 		author()
 		isbn()
 		dateBorrowed()
-		returnDate()
-		student()				
+		returnDate()			
     }
 }
