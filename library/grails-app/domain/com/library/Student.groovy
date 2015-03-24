@@ -12,8 +12,8 @@ class Student {
 
 	static constraints = {
 		name()
-		email()
-		studentId()
+		email email:true, unique:true
+		studentId size: 8..8, unique:true
 		course()
     }
 }

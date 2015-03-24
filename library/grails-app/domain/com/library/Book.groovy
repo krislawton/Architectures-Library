@@ -12,7 +12,7 @@ class Book {
 	static constraints = {
 		title()
 		author()
-		isbn()
+		isbn size:7..19, unique:true
 		dateBorrowed()
 		returnDate()			
     }

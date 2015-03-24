@@ -11,7 +11,7 @@ class Course {
 
 	static constraints = {
 		title()
-		code()
+		code size: 6..6
 		tutor()
 		department()
 		description()
