@@ -1,9 +1,8 @@
 package com.library
 
-
-
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class StudentController {
@@ -91,6 +90,13 @@ class StudentController {
             '*'{ render status: NO_CONTENT }
         }
     }
+
+	def listDetailsXML = {
+		render Student.list() as XML
+	}
+	def listDetailsJSON = {
+		render Student.list() as JSON
+	}
 
     protected void notFound() {
         request.withFormat {
