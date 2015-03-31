@@ -3,7 +3,7 @@ package com.library
 class Librarian {
 	String name
 	String email
-	String userName
+	String username
 	String password
 	String telephone
 
@@ -12,7 +12,7 @@ class Librarian {
 	static constraints = {
 		name()
 		email email:true, unique:true
-		userName unique:true
+		username unique:true
 		password()
 		telephone()
     }

@@ -11,8 +11,8 @@ class Librarian {
 
 	static constraints = {
 		name()
-		email()
-		userName()
+		email email:true, unique:true
+		userName unique:true
 		password()
 		telephone()
     }

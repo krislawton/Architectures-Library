@@ -41,7 +41,7 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${librarianInstance?.username}">
+				<g:if test="${librarianInstance?.usernme}">
 				<li class="fieldcontain">
 					<span id="username-label" class="property-label"><g:message code="librarian.username.label" default="User Name" /></span>
 					
