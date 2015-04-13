@@ -109,6 +109,10 @@
 			   content you may choose. Below is a list of controllers that are currently deployed in this application,
 			   click on each to execute its default action:</p>
 
+			<h2>Actions</h2>
+			<ul>
+				<li><g:link controller="Library" class="listBooks" action="listBooks">List borrowed books</g:link></li>
+			</ul>
 			<div id="controller-list" role="navigation">
 				<h2>Available Controllers:</h2>
 				<ul>
